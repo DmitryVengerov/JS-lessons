@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>
+    React with CSS
+  </title>
+  <script type = "text/javascript" src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'>
+  </script>
+  <style type = "text/css">
+    #element {
+      width:  100%;
+      height: 90%;
+      margin: auto;
+      float: center;
+      background-color: #000;
+      position: relative;
+    }
+    .changeButton {
+      position: relative;
+      float: center;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+
+    var changeColor1 = function()  {
+      $('#element').css('background-color','#f00');
+    };
+    var changeColor2 = function()  {
+      $('#element').css('background-color','#0f0');
+    };
+    var changeColor3 = function()  {
+      $('#element').css('background-color','#00f');
+    };
+    var changeColor4 = function()  {
+      $('#element').css('background-color','#f03');
+    };
+
+  </script>
+</head>
+<body>
+  <div id="element">
+  </div>
+  <button class=".changeButton" onclick="changeColor1();">Touch me</button>
+  <button class=".changeButton" onclick="changeColor2();">Touch me</button>
+  <button class=".changeButton" onclick="changeColor3();">Touch me</button>
+  <button class=".changeButton" onclick="changeColor4();">Touch me</button>
+</body>
+
+</html>
